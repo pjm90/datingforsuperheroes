@@ -11,14 +11,14 @@
 	$database = new Database;
 	$database->connect();
 
-	// Select all types
+	// Select all superheroes
 	$sql = 'SELECT * FROM superheroes WHERE name = "Iron-Man"';
 	$types = $database->query($sql);
 ?>
 
   <form action="process.php" method="post">
   	<label for="name">Name</label>
-  	<input type="text" name="name" placeholder="e.g. tt0103874">
+  	<input type="text" name="name" >
   	
   	<label for="email">Email</label>
   	<input type="text" name="email" placeholder="e.g. Batman">
@@ -36,7 +36,7 @@
     <input type="text" name="superpowers" placeholder="insert your superpowers">
 
     <label for="age">Age</label>
-    <input type="text" name="age" placeholder="insert your superpowers">
+    <input type="text" name="age" >
 
   	</select>
 
